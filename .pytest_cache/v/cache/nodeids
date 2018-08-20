@@ -1,4 +1,0 @@
-[
-  "tests/test_websockets.py::ChatTests::test_when_chat_message_posted_then_not_seen_by_anyone_in_different_room",
-  "tests/test_websockets.py::ChatTests::test_when_chat_message_posted_then_seen_by_everyone_in_same_room"
-]

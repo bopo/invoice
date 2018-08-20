@@ -66,3 +66,4 @@ target/
 *.sqlite3
 
 vendors/
+.pytest_cache/
