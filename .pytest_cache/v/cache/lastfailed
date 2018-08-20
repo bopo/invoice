@@ -1,0 +1,19 @@
+{
+  "service/payments/coinbase/test_coinbase.py": true,
+  "service/payments/provider/authorizenet/test_authorizenet.py": true,
+  "service/payments/provider/braintree/test_braintree.py": true,
+  "service/payments/provider/cybersource/test_cybersource.py": true,
+  "service/payments/provider/dotpay/test_dotpay.py": true,
+  "service/payments/provider/dummy/test_dummy.py": true,
+  "service/payments/provider/paypal/test_paypal.py": true,
+  "service/payments/provider/sagepay/test_sagepay.py": true,
+  "service/payments/provider/sofort/test_sofort.py": true,
+  "service/payments/provider/stripe/test_stripe.py": true,
+  "service/payments/provider/wallet/test_wallet.py": true,
+  "service/payments/test_core.py": true,
+  "tests/test_api_versions.py::TestAppVersion::test_version_list": true,
+  "tests/test_websockets.py::ChannelsLiveServerTestCase": true,
+  "tests/test_websockets.py::ChatTests": true,
+  "tests/test_websockets.py::ChatTests::test_when_chat_message_posted_then_not_seen_by_anyone_in_different_room": true,
+  "tests/test_websockets.py::ChatTests::test_when_chat_message_posted_then_seen_by_everyone_in_same_room": true
+}

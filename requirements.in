@@ -1,0 +1,11 @@
+django
+django-environ
+django-extensions
+django-import-export
+django-reversion
+django-model-utils
+django-split-settings
+django-money
+django-suit
+django-mptt
+whitenoise
