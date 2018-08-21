@@ -7,7 +7,7 @@ INSTALLED_APPS = ["suit", 'django.contrib.admin',] + INSTALLED_APPS + [
 # Django Suit configuration example
 SUIT_CONFIG = {
     # header
-    'ADMIN_NAME': u'内容管理系统',
+    'ADMIN_NAME': u'路书发票管理系统',
     'HEADER_DATE_FORMAT': 'Y F j l',
     'HEADER_TIME_FORMAT': 'Y-m-d H:i',
 

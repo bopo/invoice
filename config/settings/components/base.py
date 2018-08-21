@@ -32,7 +32,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites',
+    # 'django.contrib.sites',
 ]
 
 FIXTURE_DIRS = [
@@ -74,7 +74,7 @@ USE_TZ = env('DJANGO_USE_TZ', default=True)
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['service/backends/resource/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
