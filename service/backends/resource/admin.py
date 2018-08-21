@@ -41,7 +41,7 @@ class DepartmentAdmin(admin.ModelAdmin):
 
 @admin.register(Invoice)
 class InvoiceAdmin(admin.ModelAdmin):
-    list_display = ('title', 'owner', 'department', 'total', 'created', 'export_excel')
+    list_display = ('title', 'owner', 'department', 'total', 'created', 'export_excel', 'export_print')
     list_filter = ('owner', 'title', 'created')
     search_fields = ('title', 'owner')
     exclude = ['owner', 'created']
@@ -49,9 +49,14 @@ class InvoiceAdmin(admin.ModelAdmin):
     sortable = 'id'
 
     def export_excel(self, obj):
-        return format_html('<a href="/export/excels/{}">导出Excel</>', obj.pk)
+        return format_html('<a href="/export/excel/{}" target="_blank">导出Excel</>', obj.pk)
 
     export_excel.short_description = '导出Excel'
+
+    def export_print(self, obj):
+        return format_html('<a href="/export/print/{}" target="_blank">打印发票</>', obj.pk)
+
+    export_print.short_description = '打印发票'
 
     def print_selected_objects(modeladmin, request, queryset):
         selected = request.POST.getlist(admin.ACTION_CHECKBOX_NAME)
