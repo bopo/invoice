@@ -54,7 +54,7 @@ class InvoiceAdmin(admin.ModelAdmin):
     export_excel.short_description = '导出Excel'
 
     def export_print(self, obj):
-        return format_html('<a href="/export/print/{}" target="_blank">打印发票</>', obj.pk)
+        return format_html('<a href="/export/print/?ids={}" target="_blank">打印发票</>', obj.pk)
 
     export_print.short_description = '打印发票'
 
